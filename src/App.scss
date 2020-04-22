@@ -1,0 +1,92 @@
+/* ==========================================================================
+   PIZZA
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+/* RESETS
+============================================ */
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  background-color: #fbfbfb;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card .badge {
+  font-size: 16px;
+}
+
+.card .text-secondary {
+  line-height: 25px;
+}
+
+.card button {
+  font-weight: bold;
+}
+
+.card .btn-success.disabled, .card .btn-success:disabled {
+  cursor: default;
+}
+
+.toast.show {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 99;
+}
+
+.basket {
+  display: block;
+  padding: 20px 0;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  background-clip: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  bottom: 0;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__item {
+    &:first-of-type {
+      margin-top: 20px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fbfbfb;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
